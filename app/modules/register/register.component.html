@@ -1,3 +1,77 @@
-<p>
-  register works!
-</p>
+<div class="container animated fadeIn">
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label for="nome">Nome Completo</label>
+            <input [(ngModel)]="objUser.nome" type="text" class="form-control" id="nome" placeholder="Digite o nome">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input [(ngModel)]="objUser.email" type="email" class="form-control" id="email" placeholder="E-mail">
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div class="form-group">
+            <label for="cpf">CPF (sem hífens/ponto)</label>
+            <input [(ngModel)]="objUser.cpf" type="text" class="form-control" id="cpf" placeholder="CPF">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <div class="form-group">
+            <label for="telefone">Telefone</label>
+            <input [(ngModel)]="objUser.telefone" type="email" class="form-control" id="telefone" placeholder="Telefone">
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div class="form-group">
+            <label for="cidade">Cidade</label>
+            <input [(ngModel)]="objUser.cidade" type="text" class="form-control" id="cidade" placeholder="Cidade">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <div class="form-group">
+            <label for="camisa">Tamanho da Camisa</label>
+            <select [(ngModel)]="objUser.camisa" class="form-control" id="camisa">
+              <option value="P">P</option>
+              <option value="M">M</option>
+              <option value="G">G</option>
+              <option value="GG">GG</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div class="form-group">
+            <label for="plano">Plano de Inscrição</label>
+            <select [(ngModel)]="objUser.plano" class="form-control" id="plano">
+              <option value="Diamante">Diamante - R$ 200,00</option>
+              <option value="Ouro">Ouro - R$ 150,00 </option>
+              <option value="Prata">Prata - R$ 100,00</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+      <div class="col-xs-12 col-md-6">
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" [(ngModel)]="checkbox1" class="custom-control-input" id="check1">
+          <label class="custom-control-label" for="check1">Li e concordo com os <a class="terms" (click)="openTerms()">termos de pagamento e confirmação </a> </label>
+        </div>
+
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" [(ngModel)]="checkbox2" class="custom-control-input" id="check2">
+          <label class="custom-control-label" for="check2">Verifiquei meus dados e estão TODOS corretos</label>
+        </div>
+      </div>
+      </div>
+      <button (click)="efetuar()" class="btn btn-primary">FAZER INSCRIÇÃO</button>
+</div>

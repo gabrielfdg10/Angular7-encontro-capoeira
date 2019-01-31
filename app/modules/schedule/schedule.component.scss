@@ -1,0 +1,42 @@
+.container{
+    margin-top: 25px;
+    max-width: 1140px;
+}
+
+.date, .date-description {
+    text-align: left;
+}
+
+.date {
+    padding-top: 10px;
+}
+.date-description {
+    padding-left: 50px;
+    border-bottom: 1px solid grey;
+}
+
+.event, .prize {
+    padding-left: 50px;
+}
+
+.reward {
+    padding-left: 100px;
+}
+
+.fas {
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 700px) {
+    .date-description {
+        padding-left: 25px;
+    }
+    
+    .event, .prize {
+        padding-left: 25px;
+    }
+    
+    .reward {
+        padding-left: 50px;
+    } 
+}

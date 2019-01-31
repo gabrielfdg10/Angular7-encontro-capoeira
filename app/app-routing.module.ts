@@ -13,7 +13,7 @@ import { LoginComponent } from './modules/login/login.component';
 import { RegisterModule } from './modules/register/register.module';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent},
+  { path: '', redirectTo: 'home', pathMatch: 'full'},
   { path: 'home', component: HomeComponent},
   { path: 'entrar', component: LoginComponent},
   { path: 'painel', component: DashboardComponent },

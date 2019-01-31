@@ -5,7 +5,18 @@ body {
 }
 
 div, span, h1, h2, h3, nav, ul, li {
-    font-family: 'ZCOOL KuaiLe', cursive;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Shadows Into Light Two', cursive;
+    font-family: 'Nobile', sans-serif;
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+.text {
+    font-size: 20px;
+}
+@import 'assets/styles/materialize/sass/materialize.scss';
